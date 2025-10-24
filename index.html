@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNIS - Connect Influencers with Sponsors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-neutral-50/70 backdrop-blur-xl border-b border-neutral-200/50 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="text-xl font-semibold tracking-tighter">BNIS</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#features" class="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">Features</a>
+                    <a href="#how-it-works" class="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">How It Works</a>
+                    <a href="#pricing" class="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">Pricing</a>
+                    <button class="text-sm text-neutral-600 hover:text-neutral-900 transition-colors">Sign In</button>
+                    <button class="px-5 py-2 bg-neutral-900 text-white text-sm font-medium rounded-full hover:bg-neutral-800 transition-all hover:shadow-lg hover:shadow-neutral-900/20">Get Started</button>
+                </div>
+                <button class="md:hidden">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-32 px-6 lg:px-8 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-neutral-100/50 to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700 mb-8 shadow-sm">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                    Join 50,000+ creators and brands
+                </div>
+                <h1 class="text-6xl lg:text-7xl font-semibold tracking-tighter mb-6 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-600 bg-clip-text text-transparent leading-[1.1]">Connect Influencers with Sponsors</h1>
+                <p class="text-xl text-neutral-600 mb-12 leading-relaxed max-w-2xl mx-auto font-light">Complete marketplace with secure wallet payments, campaign management, and performance analytics. 1.5% fee, full transparency.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="group px-8 py-4 bg-neutral-900 text-white font-medium rounded-full hover:bg-neutral-800 transition-all hover:shadow-xl hover:shadow-neutral-900/20 inline-flex items-center justify-center">
+                        I'm an Influencer
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    <button class="px-8 py-4 bg-white text-neutral-900 font-medium rounded-full border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all inline-flex items-center justify-center">
+                        I'm a Sponsor
+                        <i data-lucide="building-2" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-32 max-w-5xl mx-auto">
+                <div class="text-center group">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">50K+</div>
+                    <div class="text-sm text-neutral-500 font-light">Active Influencers</div>
+                </div>
+                <div class="text-center group">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">1,200+</div>
+                    <div class="text-sm text-neutral-500 font-light">Brand Partners</div>
+                </div>
+                <div class="text-center group">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">$45M+</div>
+                    <div class="text-sm text-neutral-500 font-light">Deals Closed</div>
+                </div>
+                <div class="text-center group">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">1.5%</div>
+                    <div class="text-sm text-neutral-500 font-light">Platform Fee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Overview -->
+    <section id="features" class="py-32 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Complete platform for influencer marketing</h2>
+                <p class="text-lg text-neutral-600 font-light">Everything you need from discovery to payment in one place</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="store" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Marketplace</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Verified profiles with connected social accounts. Algorithmic matching based on niche, engagement, budget & location.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Bidding</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Direct Hire</span>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="wallet" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Secure Wallet</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Pre-deposit funds, auto-release on completion. Withdraw via UPI, bank transfer, Paytm or Razorpay.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded-full font-medium">1.5% fee</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Escrow</span>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="clipboard-list" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Campaign Management</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">End-to-end tracking with milestone approvals. Draft → Pending → Live → Completed → Paid.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Revisions</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Proof Upload</span>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Performance Analytics</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Auto-sync metrics via YouTube & Instagram APIs. View reach, engagement, and ROI with comparison tools.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Live Sync</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Rankings</span>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="handshake" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Barter & Collab</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Product-for-promo deals, micro-influencer collabs, with negotiation flow & conversion to paid options.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">No Fee</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Flexible</span>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="message-square" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Messaging System</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">1:1 and group chats with file sharing, read receipts, and encrypted messages via Supabase RLS.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Encrypted</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Real-time</span>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Verification System</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Google Sign-In, KYC via PAN/Aadhaar/GST, multi-platform linking, ratings & public portfolios.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">KYC</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Verified Badge</span>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="git-branch" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Smart Matching</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Algorithmic recommendations based on niche, engagement, budget & history. Transparent scoring system.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">No AI</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Transparent</span>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="settings" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 tracking-tight">Admin Dashboard</h3>
+                    <p class="text-neutral-600 leading-relaxed font-light mb-4">Verify users, manage disputes, monitor campaigns, fraud detection & platform analytics.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Full Control</span>
+                        <span class="px-2 py-1 bg-neutral-100 rounded-full text-neutral-600">Insights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wallet & Payment Details -->
+    <section class="py-32 px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium mb-6 border border-emerald-100">
+                        Secure Payment System
+                    </div>
+                    <h2 class="text-5xl font-semibold tracking-tighter mb-6">Built-in wallet with escrow protection</h2>
+                    <p class="text-lg text-neutral-600 leading-relaxed mb-10 font-light">Sponsors deposit funds before campaigns start. Payments auto-release when deliverables are approved. Only 1.5% convenience fee.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-neutral-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="lock" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 tracking-tight">Pre-deposit Security</h4>
+                                <p class="text-sm text-neutral-600 font-light">Funds are held in escrow until work is completed and approved</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-neutral-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 tracking-tight">Instant Withdrawals</h4>
+                                <p class="text-sm text-neutral-600 font-light">Cash out via UPI, bank transfer, Paytm or Razorpay instantly</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-neutral-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="repeat" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1 tracking-tight">Wallet Reusability</h4>
+                                <p class="text-sm text-neutral-600 font-light">Use wallet balance for barter deals or reinvest in new campaigns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 p-10 rounded-3xl border border-neutral-200">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg mb-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm text-neutral-500 font-light">Available Balance</span>
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                                <span class="text-xs text-emerald-600 font-medium">Active</span>
+                            </div>
+                        </div>
+                        <div class="text-4xl font-semibold tracking-tight mb-8">₹45,240.00</div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="px-4 py-3 bg-neutral-900 text-white text-sm font-medium rounded-xl hover:bg-neutral-800 transition-all">
+                                Deposit
+                            </button>
+                            <button class="px-4 py-3 bg-white border border-neutral-200 text-sm font-medium rounded-xl hover:border-neutral-300 transition-all">
+                                Withdraw
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white rounded-xl p-5 border border-neutral-100">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium">Campaign #2847</span>
+                                <span class="text-sm font-semibold text-emerald-600">+₹12,000</span>
+                            </div>
+                            <div class="text-xs text-neutral-500 font-light">Completed • 2 hours ago</div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-5 border border-neutral-100">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium">Campaign #2841</span>
+                                <span class="text-sm text-neutral-900 font-semibold">₹25,000</span>
+                            </div>
+                            <div class="text-xs text-neutral-500 font-light">In Progress • Milestone 2/3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Flow -->
+    <section class="py-32 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Campaign workflow</h2>
+                <p class="text-lg text-neutral-600 font-light">From creation to payment, every step is tracked</p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Connection Line -->
+                <div class="absolute top-6 left-6 right-6 h-px bg-neutral-200 hidden lg:block"></div>
+                
+                <div class="grid lg:grid-cols-5 gap-8 relative">
+                    <!-- Stage 1 -->
+                    <div class="group text-center">
+                        <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <h4 class="font-medium mb-2 text-sm">Draft</h4>
+                        <p class="text-xs text-neutral-500 font-light">Create campaign</p>
+                    </div>
+                    
+                    <!-- Stage 2 -->
+                    <div class="group text-center">
+                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <i data-lucide="clock" class="w-5 h-5 text-neutral-900"></i>
+                        </div>
+                        <h4 class="font-medium mb-2 text-sm">Pending</h4>
+                        <p class="text-xs text-neutral-500 font-light">Submit for review</p>
+                    </div>
+                    
+                    <!-- Stage 3 -->
+                    <div class="group text-center">
+                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-neutral-900"></i>
+                        </div>
+                        <h4 class="font-medium mb-2 text-sm">Live</h4>
+                        <p class="text-xs text-neutral-500 font-light">Content published</p>
+                    </div>
+                    
+                    <!-- Stage 4 -->
+                    <div class="group text-center">
+                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-neutral-900"></i>
+                        </div>
+                        <h4 class="font-medium mb-2 text-sm">Completed</h4>
+                        <p class="text-xs text-neutral-500 font-light">All approved</p>
+                    </div>
+                    
+                    <!-- Stage 5 -->
+                    <div class="group text-center">
+                        <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <h4 class="font-medium mb-2 text-sm">Paid</h4>
+                        <p class="text-xs text-neutral-500 font-light">Auto-released</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-32 px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5">How BNIS works</h2>
+                <p class="text-lg text-neutral-600 font-light">A simple process to create meaningful partnerships</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
+                <!-- For Influencers -->
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-neutral-100 rounded-full text-sm font-medium mb-10 border border-neutral-200">
+                        For Influencers
+                    </div>
+                    
+                    <div class="space-y-10">
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">1</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Create & Verify Profile</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Sign in with Google, complete KYC (PAN/Aadhaar), connect your social accounts and build your portfolio.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">2</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Get Matched or Browse</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Our algorithm matches you with relevant brands or browse open campaigns and submit bids.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">3</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Create & Deliver Content</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Work on milestones, upload proof of work, get approvals or revisions via secure messaging.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">4</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Get Paid Instantly</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Receive payment in your wallet automatically. Withdraw via UPI or reinvest in collaborations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- For Sponsors -->
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-neutral-100 rounded-full text-sm font-medium mb-10 border border-neutral-200">
+                        For Sponsors
+                    </div>
+                    
+                    <div class="space-y-10">
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">1</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Create Campaign & Deposit</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Define goals, budget, deliverables and deposit funds in secure wallet escrow.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">2</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Find Perfect Influencers</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Get algorithmic recommendations or browse verified profiles with engagement data and portfolios.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">3</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Review & Approve Work</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">Track milestones, approve content or request revisions. Auto-sync performance metrics from social platforms.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 group">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">4</div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2 tracking-tight">Analyze Results</h4>
+                                <p class="text-neutral-600 leading-relaxed font-light">View detailed ROI reports, compare influencer performance and optimize future campaigns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-32 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Trusted by creators and brands</h2>
+                <p class="text-lg text-neutral-600 font-light">See what our community has to say about BNIS</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="flex items-center gap-1 mb-6">
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                    </div>
+                    <p class="text-neutral-700 leading-relaxed mb-8 font-light">"The wallet system is genius! I get paid as soon as campaigns complete and the 1.5% fee is the lowest I've seen. Doubled my partnership revenue in 6 months."</p>
+                    <div class="flex items-center gap-4 pt-6 border-t border-neutral-100">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah" class="w-14 h-14 rounded-full object-cover ring-2 ring-neutral-100">
+                        <div>
+                            <div class="font-semibold text-sm tracking-tight">Sarah Mitchell</div>
+                            <div class="text-sm text-neutral-500 font-light">Lifestyle Influencer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="flex items-center gap-1 mb-6">
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                    </div>
+                    <p class="text-neutral-700 leading-relaxed mb-8 font-light">"The algorithmic matching is spot on. We launch campaigns in days now. The auto-synced analytics from Instagram and YouTube save us hours of manual tracking."</p>
+                    <div class="flex items-center gap-4 pt-6 border-t border-neutral-100">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Marcus" class="w-14 h-14 rounded-full object-cover ring-2 ring-neutral-100">
+                        <div>
+                            <div class="font-semibold text-sm tracking-tight">Marcus Chen</div>
+                            <div class="text-sm text-neutral-500 font-light">Marketing Director, TechCo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="flex items-center gap-1 mb-6">
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
+                    </div>
+                    <p class="text-neutral-700 leading-relaxed mb-8 font-light">"KYC verification gave me instant credibility. The barter system helped me start collaborating with other micro-influencers. First major brand deal came through BNIS!"</p>
+                    <div class="flex items-center gap-4 pt-6 border-t border-neutral-100">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Jessica" class="w-14 h-14 rounded-full object-cover ring-2 ring-neutral-100">
+                        <div>
+                            <div class="font-semibold text-sm tracking-tight">Jessica Rodriguez</div>
+                            <div class="text-sm text-neutral-500 font-light">Fashion Content Creator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-32 px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Simple, transparent pricing</h2>
+                <p class="text-lg text-neutral-600 font-light">Only 1.5% convenience fee on transactions. No hidden charges, ever.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-neutral-50 p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="text-sm font-medium text-neutral-600 mb-3 tracking-tight">Influencer Free</div>
+                    <div class="text-5xl font-semibold tracking-tighter mb-2">$0</div>
+                    <div class="text-sm text-neutral-500 mb-8 font-light">1.5% transaction fee</div>
+                    <button class="w-full px-6 py-3.5 bg-white text-neutral-900 font-medium rounded-full border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all mb-10">Get Started</button>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Verified profile & portfolio</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Apply to campaigns</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Secure wallet & payments</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Basic analytics</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Barter collaborations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-neutral-900 text-white p-10 rounded-3xl border-2 border-neutral-900 relative shadow-2xl shadow-neutral-900/20 scale-105 hover:scale-110 transition-all duration-300">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-gradient-to-r from-emerald-400 to-emerald-500 text-white text-xs font-semibold rounded-full tracking-tight">Most Popular</div>
+                    <div class="text-sm font-medium text-neutral-400 mb-3 tracking-tight">Influencer Pro</div>
+                    <div class="text-5xl font-semibold tracking-tighter mb-2">$29</div>
+                    <div class="text-sm text-neutral-400 mb-8 font-light">1.5% transaction fee</div>
+                    <button class="w-full px-6 py-3.5 bg-white text-neutral-900 font-medium rounded-full hover:shadow-xl transition-all mb-10">Get Started</button>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-neutral-900"></i>
+                            </div>
+                            <span class="text-sm font-light">Everything in Free</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-neutral-900"></i>
+                            </div>
+                            <span class="text-sm font-light">Priority algorithmic matching</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-neutral-900"></i>
+                            </div>
+                            <span class="text-sm font-light">Advanced analytics dashboard</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-neutral-900"></i>
+                            </div>
+                            <span class="text-sm font-light">Verified badge & KYC fast-track</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-neutral-900"></i>
+                            </div>
+                            <span class="text-sm font-light">Direct brand invites</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-neutral-900"></i>
+                            </div>
+                            <span class="text-sm font-light">Dynamic pricing recommendations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-neutral-50 p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                    <div class="text-sm font-medium text-neutral-600 mb-3 tracking-tight">Brand</div>
+                    <div class="text-5xl font-semibold tracking-tighter mb-2">$199</div>
+                    <div class="text-sm text-neutral-500 mb-8 font-light">per month + 1.5% fee</div>
+                    <button class="w-full px-6 py-3.5 bg-neutral-900 text-white font-medium rounded-full hover:bg-neutral-800 hover:shadow-xl transition-all mb-10">Get Started</button>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Unlimited campaigns</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">AI-powered matching engine</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Real-time performance sync</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Campaign analytics & ROI</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Multi-user access</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-neutral-900 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 text-white"></i>
+                            </div>
+                            <span class="text-sm text-neutral-700 font-light">Dedicated support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-6 lg:px-8 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.05),transparent_50%)]"></div>
+        <div class="max-w-4xl mx-auto text-center relative">
+            <h2 class="text-5xl font-semibold tracking-tighter mb-5">Ready to start connecting?</h2>
+            <p class="text-xl text-neutral-400 mb-12 font-light">Join thousands of influencers and brands already partnering on BNIS. Only 1.5% fee.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="group px-8 py-4 bg-white text-neutral-900 font-medium rounded-full hover:shadow-2xl hover:shadow-white/20 transition-all inline-flex items-center justify-center">
+                    Create Free Account
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                <button class="px-8 py-4 bg-transparent text-white font-medium rounded-full border border-neutral-600 hover:border-neutral-500 hover:bg-white/5 transition-all inline-flex items-center justify-center">
+                    Schedule a Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-neutral-200 py-16 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="text-xl font-semibold tracking-tighter mb-4">BNIS</div>
+                    <p class="text-sm text-neutral-600 leading-relaxed font-light">Connecting influencers with sponsors for authentic partnerships.</p>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold mb-5 tracking-tight">Product</div>
+                    <div class="space-y-3">
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Features</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Pricing</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Case Studies</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Reviews</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold mb-5 tracking-tight">Company</div>
+                    <div class="space-y-3">
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">About</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Blog</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Careers</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold mb-5 tracking-tight">Legal</div>
+                    <div class="space-y-3">
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Privacy</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Terms</a>
+                        <a href="#" class="block text-sm text-neutral-600 hover:text-neutral-900 transition-colors font-light">Security</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-neutral-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-neutral-600 font-light">© 2024 BNIS. All rights reserved.</div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
