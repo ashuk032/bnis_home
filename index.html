@@ -6,6 +6,97 @@
     <title>BNIS - Connect Influencers with Sponsors</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+        }
+        
+        .animate-on-scroll.animated {
+            animation-duration: 0.8s;
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .fade-in-up.animated {
+            animation-name: fadeInUp;
+        }
+        
+        .fade-in.animated {
+            animation-name: fadeIn;
+        }
+        
+        .slide-in-left.animated {
+            animation-name: slideInLeft;
+        }
+        
+        .slide-in-right.animated {
+            animation-name: slideInRight;
+        }
+        
+        .scale-in.animated {
+            animation-name: scaleIn;
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+        .stagger-6 { animation-delay: 0.6s; }
+    </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900 antialiased">
     <!-- Navigation -->
@@ -34,18 +125,18 @@
         <div class="absolute inset-0 bg-gradient-to-b from-neutral-100/50 to-transparent pointer-events-none"></div>
         <div class="max-w-7xl mx-auto relative">
             <div class="text-center max-w-4xl mx-auto">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700 mb-8 shadow-sm">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700 mb-8 shadow-sm animate-on-scroll fade-in-up">
                     <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
                     Join 50,000+ creators and brands
                 </div>
-                <h1 class="text-6xl lg:text-7xl font-semibold tracking-tighter mb-6 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-600 bg-clip-text text-transparent leading-[1.1]">Connect Influencers with Sponsors</h1>
-                <p class="text-xl text-neutral-600 mb-12 leading-relaxed max-w-2xl mx-auto font-light">Complete marketplace with secure wallet payments, campaign management, and performance analytics. 1.5% fee, full transparency.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="group px-8 py-4 bg-neutral-900 text-white font-medium rounded-full hover:bg-neutral-800 transition-all hover:shadow-xl hover:shadow-neutral-900/20 inline-flex items-center justify-center">
+                <h1 class="text-6xl lg:text-7xl font-semibold tracking-tighter mb-6 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-600 bg-clip-text text-transparent leading-[1.1] animate-on-scroll fade-in-up stagger-1">Connect Influencers with Sponsors</h1>
+                <p class="text-xl text-neutral-600 mb-12 leading-relaxed max-w-2xl mx-auto font-light animate-on-scroll fade-in-up stagger-2">Complete marketplace with secure wallet payments, campaign management, and performance analytics. 1.5% fee, full transparency.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll fade-in-up stagger-3">
+                    <button class="group px-8 py-4 bg-neutral-900 text-white font-medium rounded-full hover:bg-neutral-800 transition-all hover:shadow-xl hover:shadow-neutral-900/20 inline-flex items-center justify-center hover:scale-105">
                         I'm an Influencer
                         <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </button>
-                    <button class="px-8 py-4 bg-white text-neutral-900 font-medium rounded-full border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all inline-flex items-center justify-center">
+                    <button class="px-8 py-4 bg-white text-neutral-900 font-medium rounded-full border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all inline-flex items-center justify-center hover:scale-105">
                         I'm a Sponsor
                         <i data-lucide="building-2" class="w-4 h-4 ml-2"></i>
                     </button>
@@ -54,20 +145,20 @@
             
             <!-- Stats -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-32 max-w-5xl mx-auto">
-                <div class="text-center group">
-                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">50K+</div>
+                <div class="text-center group animate-on-scroll scale-in stagger-1">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">50K+</div>
                     <div class="text-sm text-neutral-500 font-light">Active Influencers</div>
                 </div>
-                <div class="text-center group">
-                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">1,200+</div>
+                <div class="text-center group animate-on-scroll scale-in stagger-2">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">1,200+</div>
                     <div class="text-sm text-neutral-500 font-light">Brand Partners</div>
                 </div>
-                <div class="text-center group">
-                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">$45M+</div>
+                <div class="text-center group animate-on-scroll scale-in stagger-3">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">$45M+</div>
                     <div class="text-sm text-neutral-500 font-light">Deals Closed</div>
                 </div>
-                <div class="text-center group">
-                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent">1.5%</div>
+                <div class="text-center group animate-on-scroll scale-in stagger-4">
+                    <div class="text-5xl font-semibold tracking-tighter mb-2 bg-gradient-to-br from-neutral-900 to-neutral-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform">1.5%</div>
                     <div class="text-sm text-neutral-500 font-light">Platform Fee</div>
                 </div>
             </div>
@@ -78,12 +169,12 @@
     <section id="features" class="py-32 px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Complete platform for influencer marketing</h2>
-                <p class="text-lg text-neutral-600 font-light">Everything you need from discovery to payment in one place</p>
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5 animate-on-scroll fade-in-up">Complete platform for influencer marketing</h2>
+                <p class="text-lg text-neutral-600 font-light animate-on-scroll fade-in-up stagger-1">Everything you need from discovery to payment in one place</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-1 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="store" class="w-6 h-6 text-white"></i>
                     </div>
@@ -95,7 +186,7 @@
                     </div>
                 </div>
                 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-2 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="wallet" class="w-6 h-6 text-white"></i>
                     </div>
@@ -107,7 +198,7 @@
                     </div>
                 </div>
                 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-3 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="clipboard-list" class="w-6 h-6 text-white"></i>
                     </div>
@@ -119,7 +210,7 @@
                     </div>
                 </div>
                 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-4 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="bar-chart-3" class="w-6 h-6 text-white"></i>
                     </div>
@@ -131,7 +222,7 @@
                     </div>
                 </div>
                 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-5 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="handshake" class="w-6 h-6 text-white"></i>
                     </div>
@@ -143,7 +234,7 @@
                     </div>
                 </div>
                 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-6 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="message-square" class="w-6 h-6 text-white"></i>
                     </div>
@@ -155,7 +246,7 @@
                     </div>
                 </div>
 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-1 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
                     </div>
@@ -167,7 +258,7 @@
                     </div>
                 </div>
 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-2 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="git-branch" class="w-6 h-6 text-white"></i>
                     </div>
@@ -179,7 +270,7 @@
                     </div>
                 </div>
 
-                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="group bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-3 hover:-translate-y-1">
                     <div class="w-14 h-14 bg-gradient-to-br from-neutral-900 to-neutral-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <i data-lucide="settings" class="w-6 h-6 text-white"></i>
                     </div>
@@ -199,11 +290,11 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <div class="inline-flex items-center px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium mb-6 border border-emerald-100">
+                    <div class="inline-flex items-center px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium mb-6 border border-emerald-100 animate-on-scroll slide-in-left">
                         Secure Payment System
                     </div>
-                    <h2 class="text-5xl font-semibold tracking-tighter mb-6">Built-in wallet with escrow protection</h2>
-                    <p class="text-lg text-neutral-600 leading-relaxed mb-10 font-light">Sponsors deposit funds before campaigns start. Payments auto-release when deliverables are approved. Only 1.5% convenience fee.</p>
+                    <h2 class="text-5xl font-semibold tracking-tighter mb-6 animate-on-scroll slide-in-left stagger-1">Built-in wallet with escrow protection</h2>
+                    <p class="text-lg text-neutral-600 leading-relaxed mb-10 font-light animate-on-scroll slide-in-left stagger-2">Sponsors deposit funds before campaigns start. Payments auto-release when deliverables are approved. Only 1.5% convenience fee.</p>
                     
                     <div class="space-y-6">
                         <div class="flex gap-4 items-start">
@@ -238,7 +329,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 p-10 rounded-3xl border border-neutral-200">
+                <div class="bg-gradient-to-br from-neutral-50 to-neutral-100 p-10 rounded-3xl border border-neutral-200 animate-on-scroll slide-in-right">
                     <div class="bg-white rounded-2xl p-8 shadow-lg mb-6">
                         <div class="flex items-center justify-between mb-6">
                             <span class="text-sm text-neutral-500 font-light">Available Balance</span>
@@ -284,8 +375,8 @@
     <section class="py-32 px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Campaign workflow</h2>
-                <p class="text-lg text-neutral-600 font-light">From creation to payment, every step is tracked</p>
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5 animate-on-scroll fade-in-up">Campaign workflow</h2>
+                <p class="text-lg text-neutral-600 font-light animate-on-scroll fade-in-up stagger-1">From creation to payment, every step is tracked</p>
             </div>
 
             <div class="relative max-w-5xl mx-auto">
@@ -295,47 +386,47 @@
                 <div class="grid lg:grid-cols-5 gap-8 relative">
                     <!-- Stage 1 -->
                     <div class="group text-center">
-                        <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                        <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10 animate-on-scroll scale-in">
                             <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
                         </div>
-                        <h4 class="font-medium mb-2 text-sm">Draft</h4>
-                        <p class="text-xs text-neutral-500 font-light">Create campaign</p>
+                        <h4 class="font-medium mb-2 text-sm animate-on-scroll fade-in">Draft</h4>
+                        <p class="text-xs text-neutral-500 font-light animate-on-scroll fade-in stagger-1">Create campaign</p>
                     </div>
                     
                     <!-- Stage 2 -->
                     <div class="group text-center">
-                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10 animate-on-scroll scale-in stagger-1">
                             <i data-lucide="clock" class="w-5 h-5 text-neutral-900"></i>
                         </div>
-                        <h4 class="font-medium mb-2 text-sm">Pending</h4>
-                        <p class="text-xs text-neutral-500 font-light">Submit for review</p>
+                        <h4 class="font-medium mb-2 text-sm animate-on-scroll fade-in stagger-1">Pending</h4>
+                        <p class="text-xs text-neutral-500 font-light animate-on-scroll fade-in stagger-2">Submit for review</p>
                     </div>
                     
                     <!-- Stage 3 -->
                     <div class="group text-center">
-                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10 animate-on-scroll scale-in stagger-2">
                             <i data-lucide="play-circle" class="w-5 h-5 text-neutral-900"></i>
                         </div>
-                        <h4 class="font-medium mb-2 text-sm">Live</h4>
-                        <p class="text-xs text-neutral-500 font-light">Content published</p>
+                        <h4 class="font-medium mb-2 text-sm animate-on-scroll fade-in stagger-2">Live</h4>
+                        <p class="text-xs text-neutral-500 font-light animate-on-scroll fade-in stagger-3">Content published</p>
                     </div>
                     
                     <!-- Stage 4 -->
                     <div class="group text-center">
-                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                        <div class="w-12 h-12 bg-white border border-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10 animate-on-scroll scale-in stagger-3">
                             <i data-lucide="check-circle" class="w-5 h-5 text-neutral-900"></i>
                         </div>
-                        <h4 class="font-medium mb-2 text-sm">Completed</h4>
-                        <p class="text-xs text-neutral-500 font-light">All approved</p>
+                        <h4 class="font-medium mb-2 text-sm animate-on-scroll fade-in stagger-3">Completed</h4>
+                        <p class="text-xs text-neutral-500 font-light animate-on-scroll fade-in stagger-4">All approved</p>
                     </div>
                     
                     <!-- Stage 5 -->
                     <div class="group text-center">
-                        <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10">
+                        <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mx-auto mb-4 relative z-10 animate-on-scroll scale-in stagger-4">
                             <i data-lucide="check" class="w-5 h-5 text-white"></i>
                         </div>
-                        <h4 class="font-medium mb-2 text-sm">Paid</h4>
-                        <p class="text-xs text-neutral-500 font-light">Auto-released</p>
+                        <h4 class="font-medium mb-2 text-sm animate-on-scroll fade-in stagger-4">Paid</h4>
+                        <p class="text-xs text-neutral-500 font-light animate-on-scroll fade-in stagger-5">Auto-released</p>
                     </div>
                 </div>
             </div>
@@ -346,44 +437,52 @@
     <section id="how-it-works" class="py-32 px-6 lg:px-8 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-5xl font-semibold tracking-tighter mb-5">How BNIS works</h2>
-                <p class="text-lg text-neutral-600 font-light">A simple process to create meaningful partnerships</p>
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5 animate-on-scroll fade-in-up">How BNIS works</h2>
+                <p class="text-lg text-neutral-600 font-light animate-on-scroll fade-in-up stagger-1">A simple process to create meaningful partnerships</p>
             </div>
             
             <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
                 <!-- For Influencers -->
                 <div>
-                    <div class="inline-flex items-center px-4 py-2 bg-neutral-100 rounded-full text-sm font-medium mb-10 border border-neutral-200">
+                    <div class="inline-flex items-center px-4 py-2 bg-neutral-100 rounded-full text-sm font-medium mb-10 border border-neutral-200 animate-on-scroll slide-in-left">
                         For Influencers
                     </div>
                     
                     <div class="space-y-10">
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">1</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                1
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Create & Verify Profile</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Sign in with Google, complete KYC (PAN/Aadhaar), connect your social accounts and build your portfolio.</p>
                             </div>
                         </div>
                         
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">2</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up stagger-1">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                2
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Get Matched or Browse</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Our algorithm matches you with relevant brands or browse open campaigns and submit bids.</p>
                             </div>
                         </div>
                         
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">3</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up stagger-2">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                3
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Create & Deliver Content</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Work on milestones, upload proof of work, get approvals or revisions via secure messaging.</p>
                             </div>
                         </div>
                         
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">4</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up stagger-3">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                4
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Get Paid Instantly</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Receive payment in your wallet automatically. Withdraw via UPI or reinvest in collaborations.</p>
@@ -394,37 +493,45 @@
                 
                 <!-- For Sponsors -->
                 <div>
-                    <div class="inline-flex items-center px-4 py-2 bg-neutral-100 rounded-full text-sm font-medium mb-10 border border-neutral-200">
+                    <div class="inline-flex items-center px-4 py-2 bg-neutral-100 rounded-full text-sm font-medium mb-10 border border-neutral-200 animate-on-scroll slide-in-right">
                         For Sponsors
                     </div>
                     
                     <div class="space-y-10">
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">1</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                1
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Create Campaign & Deposit</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Define goals, budget, deliverables and deposit funds in secure wallet escrow.</p>
                             </div>
                         </div>
                         
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">2</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up stagger-1">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                2
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Find Perfect Influencers</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Get algorithmic recommendations or browse verified profiles with engagement data and portfolios.</p>
                             </div>
                         </div>
                         
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">3</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up stagger-2">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                3
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Review & Approve Work</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">Track milestones, approve content or request revisions. Auto-sync performance metrics from social platforms.</p>
                             </div>
                         </div>
                         
-                        <div class="flex gap-6 group">
-                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">4</div>
+                        <div class="flex gap-6 group animate-on-scroll fade-in-up stagger-3">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-neutral-900 to-neutral-700 text-white rounded-2xl flex items-center justify-center font-semibold text-lg group-hover:scale-110 transition-transform">
+                                4
+                            </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-2 tracking-tight">Analyze Results</h4>
                                 <p class="text-neutral-600 leading-relaxed font-light">View detailed ROI reports, compare influencer performance and optimize future campaigns.</p>
@@ -440,12 +547,12 @@
     <section class="py-32 px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Trusted by creators and brands</h2>
-                <p class="text-lg text-neutral-600 font-light">See what our community has to say about BNIS</p>
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5 animate-on-scroll fade-in-up">Trusted by creators and brands</h2>
+                <p class="text-lg text-neutral-600 font-light animate-on-scroll fade-in-up stagger-1">See what our community has to say about BNIS</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up">
                     <div class="flex items-center gap-1 mb-6">
                         <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
@@ -463,7 +570,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-1">
                     <div class="flex items-center gap-1 mb-6">
                         <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
@@ -481,7 +588,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="bg-white p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-2">
                     <div class="flex items-center gap-1 mb-6">
                         <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-neutral-900 text-neutral-900"></i>
@@ -506,12 +613,12 @@
     <section id="pricing" class="py-32 px-6 lg:px-8 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-5xl font-semibold tracking-tighter mb-5">Simple, transparent pricing</h2>
-                <p class="text-lg text-neutral-600 font-light">Only 1.5% convenience fee on transactions. No hidden charges, ever.</p>
+                <h2 class="text-5xl font-semibold tracking-tighter mb-5 animate-on-scroll fade-in-up">Simple, transparent pricing</h2>
+                <p class="text-lg text-neutral-600 font-light animate-on-scroll fade-in-up stagger-1">Only 1.5% convenience fee on transactions. No hidden charges, ever.</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                <div class="bg-neutral-50 p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="bg-neutral-50 p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up">
                     <div class="text-sm font-medium text-neutral-600 mb-3 tracking-tight">Influencer Free</div>
                     <div class="text-5xl font-semibold tracking-tighter mb-2">$0</div>
                     <div class="text-sm text-neutral-500 mb-8 font-light">1.5% transaction fee</div>
@@ -550,7 +657,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-neutral-900 text-white p-10 rounded-3xl border-2 border-neutral-900 relative shadow-2xl shadow-neutral-900/20 scale-105 hover:scale-110 transition-all duration-300">
+                <div class="bg-neutral-900 text-white p-10 rounded-3xl border-2 border-neutral-900 relative shadow-2xl shadow-neutral-900/20 scale-105 hover:scale-110 transition-all duration-300 animate-on-scroll fade-in-up stagger-1">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-gradient-to-r from-emerald-400 to-emerald-500 text-white text-xs font-semibold rounded-full tracking-tight">Most Popular</div>
                     <div class="text-sm font-medium text-neutral-400 mb-3 tracking-tight">Influencer Pro</div>
                     <div class="text-5xl font-semibold tracking-tighter mb-2">$29</div>
@@ -596,7 +703,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-neutral-50 p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300">
+                <div class="bg-neutral-50 p-10 rounded-3xl border border-neutral-200 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 transition-all duration-300 animate-on-scroll fade-in-up stagger-2">
                     <div class="text-sm font-medium text-neutral-600 mb-3 tracking-tight">Brand</div>
                     <div class="text-5xl font-semibold tracking-tighter mb-2">$199</div>
                     <div class="text-sm text-neutral-500 mb-8 font-light">per month + 1.5% fee</div>
@@ -648,14 +755,14 @@
     <section class="py-32 px-6 lg:px-8 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.05),transparent_50%)]"></div>
         <div class="max-w-4xl mx-auto text-center relative">
-            <h2 class="text-5xl font-semibold tracking-tighter mb-5">Ready to start connecting?</h2>
-            <p class="text-xl text-neutral-400 mb-12 font-light">Join thousands of influencers and brands already partnering on BNIS. Only 1.5% fee.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="group px-8 py-4 bg-white text-neutral-900 font-medium rounded-full hover:shadow-2xl hover:shadow-white/20 transition-all inline-flex items-center justify-center">
+            <h2 class="text-5xl font-semibold tracking-tighter mb-5 animate-on-scroll fade-in-up">Ready to start connecting?</h2>
+            <p class="text-xl text-neutral-400 mb-12 font-light animate-on-scroll fade-in-up stagger-1">Join thousands of influencers and brands already partnering on BNIS. Only 1.5% fee.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll fade-in-up stagger-2">
+                <button class="group px-8 py-4 bg-white text-neutral-900 font-medium rounded-full hover:shadow-2xl hover:shadow-white/20 transition-all inline-flex items-center justify-center hover:scale-105">
                     Create Free Account
                     <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
                 </button>
-                <button class="px-8 py-4 bg-transparent text-white font-medium rounded-full border border-neutral-600 hover:border-neutral-500 hover:bg-white/5 transition-all inline-flex items-center justify-center">
+                <button class="px-8 py-4 bg-transparent text-white font-medium rounded-full border border-neutral-600 hover:border-neutral-500 hover:bg-white/5 transition-all inline-flex items-center justify-center hover:scale-105">
                     Schedule a Demo
                 </button>
             </div>
@@ -698,7 +805,7 @@
                 </div>
             </div>
             <div class="pt-8 border-t border-neutral-200 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <div class="text-sm text-neutral-600 font-light">© 2024 BNIS. All rights reserved.</div>
+                <div class="text-sm text-neutral-600 font-light"> 2024 BNIS. All rights reserved.</div>
                 <div class="flex items-center gap-6">
                     <a href="#" class="text-neutral-600 hover:text-neutral-900 transition-colors">
                         <i data-lucide="twitter" class="w-5 h-5"></i>
@@ -716,6 +823,26 @@
 
     <script>
         lucide.createIcons();
+        
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all elements with animate-on-scroll class
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
     </script>
 </body>
 </html>
